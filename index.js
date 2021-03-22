@@ -1,15 +1,21 @@
 // import myFunction from './topic1-task1';
 import { summation } from './t1_closure/main.js';
+
 import { 
   animalNames, 
   lowerCaseNames, 
   lowPopulationAnimals, 
   USApop } from './t2_arrays-callbacks/main_arrays.js';
+
 import {
   consume,
   add, 
   multiply, 
   greeting} from './t2_arrays-callbacks/main_callbacks.js';
+
+import {} from './t3_prototypes/main.js'
+
+
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
