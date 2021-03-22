@@ -1,3 +1,69 @@
+1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    *	forEach is basically a for loop over an array.
+        *	It doesn’t have to return a value in each iteration.
+    *	.map also “looks at” each element in an array, however for each element it returns a value into a new array.
+        *	forEach can be made to do the same thing that .map does (such as creating a new array before entering the loop and pushing an element to the new array in every iteration of the loop).
+
+
+2. Explain the difference between a callback and a higher order function.
+    *	A callback function is used to be executed at a later time (for example, when an event occurs like a button being clicked).
+    *	Callback functions are usually passed in as arguments to other functions such as event listeners.
+    *	Higher order functions take functions as arguments.
+    *	Callbacks functions are commonly used with higher order functions since callback functions are themselves functions and commonly passed as arguments into other functions (i.e., callback functions are usually used as arguments to higher order functions),
+
+
+3. What is closure?
+    *	Closure definition:
+        *	Inner scope references variables in outer scope
+    *	Closures give us the ability to:
+        *	put functions together.
+        *	access functions from a parent level scope in a child level scope
+    *	Even after the parent function has terminated.
+        *	use code later that has been identified elsewhere.
+        *	pass variables down but we can’t pass them back up.
+
+
+
+4. Describe the four rules of the 'this' keyword.5. Why do we need super() in an extended class?
+
+  * Implicit Binding
+    * this refers to the object that called the method.
+    * Look to the left of the dot.
+
+  * Explicit Binding
+    * Used to bind a function to the context of a specific object.
+    * We explicity state which object the "this"-keyword refers to.
+    * Three ways of performing explicit binding:
+      * .bind
+        * Returns a function to be invoked later:
+        * Syntax:
+          - function = function.bind(object);  
+      * .call
+        * Immediately invoke function
+          - Takes an argument list as individual arguments
+        * Syntax:
+          - function.call(object, arg1,...,argN);
+      * .apply 
+        * Same as .call but instead of a parameter list as individual parameters it uses an array.
+        * Immediately invoke function
+          * Takes an array as argument
+        * Syntax:
+          - function.apply(object, [arg1,...,argN]);
+  * new binding
+    * The new keyword is used to generate a new object from a constructor function.
+      * When a constructor function is invoked with the new keyword it:
+        - 1. Creates a new object (this = {};)
+        - 2. Adds the properties onto it
+        - 3. Returns the new object (return this;)
+
+  o window binding
+    * If you invoke a function and it doesn't have anything to the left of the dot, not using the new-binding, 
+      and .call, .apply, or .bind are not applied, then this-keyword defaults to referring to the global object.
+    * The default object is the global object.  In the browser this is the window object.
+
+
+
+
 # Sprint Challenge - JavaScript Fundamentals
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
