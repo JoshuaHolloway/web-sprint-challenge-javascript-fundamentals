@@ -1,133 +1,11 @@
-//🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
-/* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
-Study the code below and explain in your own words why nested function can access the variable internal. */
-
-const external = "I'm outside the function";
-
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
-
-  function nestedFunction() {
-    console.log(internal);
-  }
-  nestedFunction();
-}
-myFunction();
-
-//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-// -The variable internal is Lexically Scoped such that it is resides in the Execution Context
-//  of the function name myFunction (the function myFunction itself is Lexically Scoped 
-//  such that myFunction sits in the Execution Context corresponding to the global scope).
-// -Since the function nestedFunction is defined directly inside of myFunction,
-//  nestedFunction is Lexically Scoped such that it resides in the Execution Context of myFunction.
-// -When nestedFunction is invoked it looks inside its own Exeuction Context to see if 
-//  the variable is in the scope of the current Exeuction Context, if it is not (which it is not)
-//  the next level up the Scope Chain is searched for the variable named internal. Since the variable
-//  is indeed found to exist at this scope (we are currently in myFunction's scope) whatever this
-//  variable (named internal) refers to is what is used inside of nestedFunction.
-// -The way I think of this is as follows:
-//    --In my diagram below I imagine a container surrounding each level of the scope chain.
-//    --In my imagination the container is like a one-way mirror that can see outward, 
-//      but not inward.
-//    --The variable internal can be seen/used in the inner most scope and the scope above it (where it is defined).
-//    --The variable extrenal can be seen/used in the inner most scope, the scope above it, and the scope above it (where it is defined).
-//    --Closures are when a variable looks outside of its current scope by looking through this one-way mirror looking up the scope chain.
-// 
-//    -----------------------------------------------------------|
-//    | Global Scope:                                            |
-//    |                        variable: external                |
-//    |                                                          |
-//    |      --------------------------------------------|       |
-//    |      | Scope of myFunction:                      |       |
-//    |      |                       variable: internal  |       |
-//    |      |                                           |       |
-//    |      |      ------------------------------|      |       |
-//    |      |      | Scope of nestedFunction:    |      |       |
-//    |      |      |                             |      |       |
-//    |      |      |                             |      |       |
-//    |      |      |                             |      |       |
-//    |      |      ------------------------------|      |       |
-//    |      ---------------------------------------------       |
-//    |                                                          |
-//    -------------------------------------------------------------
+// import myFunction from './topic1-task1';
+import summation from './t1_closure/main.js';
+import {animalNames, lowerCaseNames} from './t2_arrays-callbacks/main.js';
 
 
 
 
 
-/* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
-/* Use summation to do the following:
-    1. Receive a number 
-    2. Use a counter to return the summation of that number. 
-    
-For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
-
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-  }
- 
-
-// 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
-// Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
-
-const zooAnimals = [
-    { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
-    { animal_name: "Screamer, southern", population: 1, scientific_name: "Chauna torquata", state: "Alabama" },
-    { animal_name: "White spoonbill", population: 8, scientific_name: "Platalea leucordia", state: "Georgia" },
-    { animal_name: "White-cheeked pintail", population: 1, scientific_name: "Anas bahamensis", state: "Oregon" },
-    { animal_name: "Black-backed jackal", population: 2, scientific_name: "Canis mesomelas", state: "Washington" },
-    { animal_name: "Brolga crane", population: 9, scientific_name: "Grus rubicundus", state: "New Mexico" },
-    { animal_name: "Common melba finch", population: 5, scientific_name: "Pytilia melba", state: "Pennsylvania" },
-    { animal_name: "Pampa gray fox", population: 10, scientific_name: "Pseudalopex gymnocercus", state: "Connecticut" },
-    { animal_name: "Hawk-eagle, crowned", population: 10, scientific_name: "Spizaetus coronatus", state: "Florida" },
-    { animal_name: "Australian pelican", population: 5, scientific_name: "Pelecanus conspicillatus", state: "West Virginia" },
-  ];
-  
-  /* 🦁🦁🦁 Request 1: .forEach() 🦁🦁🦁
-  The zoos want to display both the scientific name and the animal name in front of the habitats. 
-  Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
-  displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
-  */
-
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-  
-
-  /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
-  The zoo needs a list of all their animal's names converted to lower case. 
-  Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
-  For example: ['jackal, asiatic', .....]
-  */
-
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-  
-  
-  /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
-  The zoo is concerned about animals with a lower population count. 
-  Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
-  */
-
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-  
-
-  /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
-  The zoo needs to know their total animal population across the United States. 
-  Using USApop find the total population from the zoos array using the .reduce() method. 
-  Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
-  */
-
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-  
-  
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
     * Use the higher-order function consume with 3 parameters: a, b and cb
@@ -246,12 +124,12 @@ class CuboidMakerTwo{
     summation,
     animalNames,
     lowerCaseNames,
-    lowPopulationAnimals,
-    USApop,
-    consume, 
-    add,
-    multiply,
-    greeting,
-    CuboidMaker,
-    CuboidMakerTwo
+    // lowPopulationAnimals,
+    // USApop,
+    // consume, 
+    // add,
+    // multiply,
+    // greeting,
+    // CuboidMaker,
+    // CuboidMakerTwo
   }
