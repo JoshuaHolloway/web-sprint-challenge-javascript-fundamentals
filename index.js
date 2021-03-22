@@ -13,7 +13,7 @@ import {
   multiply, 
   greeting} from './t2_arrays-callbacks/main_callbacks.js';
 
-import {} from './t3_prototypes/main.js'
+import CuboidMaker from './t3_prototypes/main.js';
 
 
 
@@ -34,6 +34,6 @@ export default{
   add,
   multiply,
   greeting,
-  // CuboidMaker,
+  CuboidMaker,
   // CuboidMakerTwo
 }

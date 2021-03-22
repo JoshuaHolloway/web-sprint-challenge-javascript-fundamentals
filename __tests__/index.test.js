@@ -116,39 +116,45 @@ describe('greeting', ()=>{
 
 
 
-// // prototypes
-// describe('Instance of CuboidMaker', () => {
-//     let cuboid
-//     beforeEach(() => {
-//       cuboid = new functions.CuboidMaker({
-//         length: 4,
-//         width: 5, 
-//         height:5,
-//       })
-//     })
-//     it('[1] initializes with length', () => {
-//         console.log(cuboid);
-//       expect(cuboid.length).toBe(4)
-//     })
-//     it('[2] initializes with the width', () => {
-//       expect(cuboid.width).toBe(5)
-//     })
-//     it('[3] initializes with an empty height', () => {
-//       expect(cuboid.height).toBe(5)
-//     })
-//     it('[4] has volume and surfaceArea methods', () => {
-//       expect(cuboid.__proto__.volume).toBeDefined()
-//       expect(cuboid.__proto__.surfaceArea).toBeDefined()
-//     })
-//     it('[5] has a volume', () => {
-//       const vol = cuboid.volume()
-//       expect(vol).toBe(100)
-//     })
-//     it('[5] has a surface', () => {
-//         const sur = cuboid.surfaceArea()
-//         expect(sur).toBe(130)
-//       })
-//   })
+// prototypes
+describe('Instance of CuboidMaker', () => {
+  let cuboid
+  beforeEach(() => {
+    cuboid = new functions.CuboidMaker({
+      length: 4,
+      width: 5, 
+      height:5,
+    })
+  })
+
+  it('[1] initializes with length', () => {
+      console.log(cuboid);
+    expect(cuboid.length).toBe(4)
+  })
+
+  it('[2] initializes with the width', () => {
+    expect(cuboid.width).toBe(5)
+  })
+
+  it('[3] initializes with an empty height', () => {
+    expect(cuboid.height).toBe(5)
+  })
+
+  it('[4] has volume and surfaceArea methods', () => {
+    expect(cuboid.__proto__.volume).toBeDefined()
+    expect(cuboid.__proto__.surfaceArea).toBeDefined()
+  })
+
+  it('[5] has a volume', () => {
+    const vol = cuboid.volume()
+    expect(vol).toBe(100)
+  })
+  
+  it('[5] has a surface', () => {
+    const sur = cuboid.surfaceArea()
+    expect(sur).toBe(130)
+  })
+})
 
 
 //classes
