@@ -57,32 +57,32 @@ describe('lowerCaseNames', ()=>{
     })
 });
 
-// describe('lowPopulationAnimals', ()=>{
-//     it('animalNames returns an array', ()=>{
-//         expect(functions.lowPopulationAnimals(zooAnimals)).toEqual(expect.arrayContaining(
-//             [
-//                 {
-//                   animal_name: 'Screamer, southern',
-//                   population: 1,
-//                   scientific_name: 'Chauna torquata',
-//                   state: 'Alabama'
-//                 },
-//                 {
-//                   animal_name: 'White-cheeked pintail',
-//                   population: 1,
-//                   scientific_name: 'Anas bahamensis',
-//                   state: 'Oregon'
-//                 },
-//                 {
-//                   animal_name: 'Black-backed jackal',
-//                   population: 2,
-//                   scientific_name: 'Canis mesomelas',
-//                   state: 'Washington'
-//                 }
-//               ]
-//         ));
-//     })
-// });
+describe('lowPopulationAnimals', ()=>{
+    it('animalNames returns an array', ()=>{
+        expect(functions.lowPopulationAnimals(zooAnimals)).toEqual(expect.arrayContaining(
+            [
+                {
+                  animal_name: 'Screamer, southern',
+                  population: 1,
+                  scientific_name: 'Chauna torquata',
+                  state: 'Alabama'
+                },
+                {
+                  animal_name: 'White-cheeked pintail',
+                  population: 1,
+                  scientific_name: 'Anas bahamensis',
+                  state: 'Oregon'
+                },
+                {
+                  animal_name: 'Black-backed jackal',
+                  population: 2,
+                  scientific_name: 'Canis mesomelas',
+                  state: 'Washington'
+                }
+              ]
+        ));
+    })
+});
 
 // describe('USApop', ()=>{
 //     it('USApop returns an array', ()=>{

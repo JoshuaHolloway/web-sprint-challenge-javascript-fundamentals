@@ -16,31 +16,10 @@ const zooAnimals = [
 
 
 import animalNames from './request1.js';
-import lowerCaseNames from './request2.js'
+import lowerCaseNames from './request2.js';
+import lowPopulationAnimals from './request3.js';
 // console.log(animalNames(zooAnimals));
 console.log(lowerCaseNames(zooAnimals));
-export {animalNames, lowerCaseNames};
 
 
-
-
-
-/* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
-The zoo is concerned about animals with a lower population count. 
-Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
-*/
-
-function lowPopulationAnimals(/*Your Code Here*/){
-  /*Your Code Here*/
-}
-
-
-/* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
-The zoo needs to know their total animal population across the United States. 
-Using USApop find the total population from the zoos array using the .reduce() method. 
-Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
-*/
-
-function USApop(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+export {animalNames, lowerCaseNames, lowPopulationAnimals};

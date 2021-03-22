@@ -1,6 +1,6 @@
 // import myFunction from './topic1-task1';
 import { summation } from './t1_closure/main.js';
-import { animalNames, lowerCaseNames } from './t2_arrays-callbacks/main.js';
+import { animalNames, lowerCaseNames, lowPopulationAnimals } from './t2_arrays-callbacks/main.js';
 
 
 
@@ -124,7 +124,7 @@ class CuboidMakerTwo{
     summation,
     animalNames,
     lowerCaseNames,
-    // lowPopulationAnimals,
+    lowPopulationAnimals,
     // USApop,
     // consume, 
     // add,
