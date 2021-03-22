@@ -14,8 +14,7 @@ import {
   greeting} from './t2_arrays-callbacks/main_callbacks.js';
 
 import CuboidMaker from './t3_prototypes/main.js';
-
-
+import CuboidMakerTwo from './t4_classes/main.js';
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
@@ -23,6 +22,7 @@ function foo(){
   //console.log('its working');
   return 'bar';
 }
+
 export default{
   foo,
   summation,
@@ -35,5 +35,5 @@ export default{
   multiply,
   greeting,
   CuboidMaker,
-  // CuboidMakerTwo
-}
+  CuboidMakerTwo
+};

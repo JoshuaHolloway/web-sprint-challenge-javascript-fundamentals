@@ -54,15 +54,15 @@ console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
 
 
-// Personal Stretch
-// Personal Stretch
-// Personal Stretch
-// Personal Stretch
-// Personal Stretch
-// -Utilize prototypal inheritance to create a sub-class Cube that inherits from Cuboid.
+// Stretch
+// Stretch
+// Stretch
+// Stretch
+// Stretch
+// -Utilize prototypal inheritance to create a sub-class CubeMaker that inherits from CuboidMaker.
 
 // Step 1: Create a child constructor
-function Cube(length) {
+function CubeMaker(length) {
   // -Set inherited properties by calling parent constructor
   CuboidMaker.call(this, {
     length, 
@@ -71,7 +71,7 @@ function Cube(length) {
 }
 
 // Step 2: Inherit the properties by setting the prototype property on the child's constructor function to the prototype object of the Cuboid class:
-Cube.prototype = Object.create(CuboidMaker.prototype);
+CubeMaker.prototype = Object.create(CuboidMaker.prototype);
 // -Object.create is a static method on the base Object class 
 //  that creates a object that has the prototye object of the
 //  arguement to Object.create().
@@ -81,10 +81,10 @@ Cube.prototype = Object.create(CuboidMaker.prototype);
 
 // Add new methods
 // (Really override perviously defined volume/area methods)
-Cube.prototype.volume = function() {
+CubeMaker.prototype.volume = function() {
   return Math.pow(this.length, 3);
 }
-Cube.prototype.surfaceArea = function() {
+CubeMaker.prototype.surfaceArea = function() {
   return 6 * Math.pow(this.length, 2);
 }
 

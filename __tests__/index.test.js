@@ -158,36 +158,35 @@ describe('Instance of CuboidMaker', () => {
 
 
 //classes
-
-// describe('Instance of CuboidMakerTwo', () => {
-//     let cuboidTwo
-//     beforeEach(() => {
-//       cuboidTwo = new functions.CuboidMakerTwo({
-//         length: 4,
-//         width: 5, 
-//         height:5,
-//       })
-//     })
-//     it('[1] initializes with length', () => {
-//         console.log(cuboidTwo);
-//       expect(cuboidTwo.length).toBe(4)
-//     })
-//     it('[2] initializes with the width', () => {
-//       expect(cuboidTwo.width).toBe(5)
-//     })
-//     it('[3] initializes with an empty height', () => {
-//       expect(cuboidTwo.height).toBe(5)
-//     })
-//     it('[4] has volume and surfaceArea methods', () => {
-//       expect(cuboidTwo.__proto__.volume).toBeDefined()
-//       expect(cuboidTwo.__proto__.surfaceArea).toBeDefined()
-//     })
-//     it('[5] has a volume', () => {
-//       const vol = cuboidTwo.volume()
-//       expect(vol).toBe(100)
-//     })
-//     it('[5] has a surface', () => {
-//         const sur = cuboidTwo.surfaceArea()
-//         expect(sur).toBe(130)
-//       })
-//   })
+describe('Instance of CuboidMakerTwo', () => {
+    let cuboidTwo
+    beforeEach(() => {
+      cuboidTwo = new functions.CuboidMakerTwo({
+        length: 4,
+        width: 5, 
+        height:5,
+      })
+    })
+    it('[1] initializes with length', () => {
+        console.log(cuboidTwo);
+      expect(cuboidTwo.length).toBe(4)
+    })
+    it('[2] initializes with the width', () => {
+      expect(cuboidTwo.width).toBe(5)
+    })
+    it('[3] initializes with an empty height', () => {
+      expect(cuboidTwo.height).toBe(5)
+    })
+    it('[4] has volume and surfaceArea methods', () => {
+      expect(cuboidTwo.__proto__.volume).toBeDefined()
+      expect(cuboidTwo.__proto__.surfaceArea).toBeDefined()
+    })
+    it('[5] has a volume', () => {
+      const vol = cuboidTwo.volume()
+      expect(vol).toBe(100)
+    })
+    it('[5] has a surface', () => {
+        const sur = cuboidTwo.surfaceArea()
+        expect(sur).toBe(130)
+      })
+  })
