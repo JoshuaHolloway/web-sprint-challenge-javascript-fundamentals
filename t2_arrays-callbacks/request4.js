@@ -4,6 +4,5 @@ Using USApop find the total population from the zoos array using the .reduce() m
 Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
 */
 
-function USApop(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+const init_val = 0;
+export default _ => _.reduce((sum, elem) => sum + elem.population, init_val);

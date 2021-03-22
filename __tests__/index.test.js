@@ -84,11 +84,12 @@ describe('lowPopulationAnimals', ()=>{
     })
 });
 
-// describe('USApop', ()=>{
-//     it('USApop returns an array', ()=>{
-//         expect(functions.USApop(zooAnimals)).toEqual(56);
-//     })
-// });
+describe('USApop', ()=>{
+    it('USApop returns an array', ()=>{
+        expect(functions.USApop(zooAnimals)).toEqual(56);
+    })
+});
+
 // describe('consume', ()=>{
 //     it('consume returns a number or string', ()=>{
 //         expect(functions.consume(2, 5, add)).toBe(add(2, 5));

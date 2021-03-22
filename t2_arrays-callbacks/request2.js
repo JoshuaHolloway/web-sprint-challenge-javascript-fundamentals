@@ -4,8 +4,4 @@ Using lowerCaseNames use .map() to create a new array of strings with the animal
 For example: ['jackal, asiatic', .....]
 */
 
-function lowerCaseNames(x){
-  console.log('lowerCaseNames()');
- return x.map(elem => elem.animal_name.toLowerCase());
-}
-export default lowerCaseNames;
+export default _ => _.map(elem => elem.animal_name.toLowerCase());

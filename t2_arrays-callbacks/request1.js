@@ -4,9 +4,8 @@ Use animalNames to populate and return the displayNames array with only the anim
 displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames($){
+export default $ => {
   const displayNames = [];                                //  name: {name}, scientific: {scientific name}
   $.forEach(elem => displayNames.push(`name: ${elem.animal_name}, scientific: ${elem.scientific_name}`));
   return displayNames;
 }
-export default animalNames;

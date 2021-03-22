@@ -18,8 +18,10 @@ const zooAnimals = [
 import animalNames from './request1.js';
 import lowerCaseNames from './request2.js';
 import lowPopulationAnimals from './request3.js';
+import USApop from './request4.js'
+
 // console.log(animalNames(zooAnimals));
 console.log(lowerCaseNames(zooAnimals));
 
 
-export {animalNames, lowerCaseNames, lowPopulationAnimals};
+export {animalNames, lowerCaseNames, lowPopulationAnimals, USApop};
