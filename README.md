@@ -24,7 +24,7 @@
 
 
 
-4. Describe the four rules of the 'this' keyword.5. Why do we need super() in an extended class?
+4. Describe the four rules of the 'this' keyword.
 
   * Implicit Binding
     * this refers to the object that called the method.
@@ -61,7 +61,8 @@
       and .call, .apply, or .bind are not applied, then this-keyword defaults to referring to the global object.
     * The default object is the global object.  In the browser this is the window object.
 
-
+5. Why do we need super() in an extended class?
+  * To call the extended classes constructor to initialize the properties that will be inherited by any objects instantiated from this base class. 
 
 
 # Sprint Challenge - JavaScript Fundamentals
