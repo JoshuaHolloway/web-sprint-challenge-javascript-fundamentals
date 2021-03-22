@@ -90,29 +90,29 @@ describe('USApop', ()=>{
     })
 });
 
-// describe('consume', ()=>{
-//     it('consume returns a number or string', ()=>{
-//         expect(functions.consume(2, 5, add)).toBe(add(2, 5));
-//     })
-// });
+describe('consume', ()=>{
+    it('consume returns a number or string', ()=>{
+        expect(functions.consume(2, 5, add)).toBe(add(2, 5));
+    })
+});
 
-// describe('add', ()=>{
-//     it('add returns a number', ()=>{
-//         expect(functions.add(2,5)).toBe(7);
-//     })
-// });
+describe('add', ()=>{
+    it('add returns a number', ()=>{
+        expect(functions.add(2,5)).toBe(7);
+    })
+});
 
-// describe('multiply', ()=>{
-//     it('multiply returns a number', ()=>{
-//         expect(functions.multiply(2,5)).toBe(10);
-//     })
-// });
+describe('multiply', ()=>{
+    it('multiply returns a number', ()=>{
+        expect(functions.multiply(2,5)).toBe(10);
+    })
+});
 
-// describe('greeting', ()=>{
-//     it('greeting returns a string', ()=>{
-//         expect(functions.greeting('Jane', 'Doe')).toBe(`Hello Jane Doe, nice to meet you!`);
-//     })
-// });
+describe('greeting', ()=>{
+    it('greeting returns a string', ()=>{
+        expect(functions.greeting('Jane', 'Doe')).toBe(`Hello Jane Doe, nice to meet you!`);
+    })
+});
 
 
 

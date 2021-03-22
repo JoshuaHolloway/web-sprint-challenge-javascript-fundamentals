@@ -14,7 +14,6 @@ const zooAnimals = [
   { animal_name: "Australian pelican", population: 5, scientific_name: "Pelecanus conspicillatus", state: "West Virginia" },
 ];
 
-
 import animalNames from './request1.js';
 import lowerCaseNames from './request2.js';
 import lowPopulationAnimals from './request3.js';
