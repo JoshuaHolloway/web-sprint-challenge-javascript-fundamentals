@@ -60,6 +60,4 @@ console.log(`Method 3: ${summed_3}`);
 //      sum(x_i from i=1 to i=upper_bound) = 1 + 2 + ... + upper_bound 
 
 // I will use the 3rd version to test :)
-const summation = summation_3;
-
-export default summation;
+export default summation_3;
